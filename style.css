@@ -69,6 +69,10 @@ nav .logo {
     cursor: pointer;
 }
 
+.container {
+    display: flex;
+}
+
 @media(max-width: 800px) {
     nav .mainMenu {
         height: 100vh;
@@ -101,5 +105,9 @@ nav .logo {
     .icons i {
         display: inline-block;
         padding: 12px;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
     }
 }
