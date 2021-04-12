@@ -71,7 +71,13 @@ nav .logo {
 
 .container {
     display: flex;
+    width: 100%;
 }
+
+
+/*.portfolio-card-image {
+    background-image: url('img/portfolio-placeholder.jpg');
+}*/
 
 @media(max-width: 800px) {
     nav .mainMenu {

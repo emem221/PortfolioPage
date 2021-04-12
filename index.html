@@ -40,22 +40,161 @@
     <section data-aos="fade-up" class="hero-unit d-flex align-items-center content-dark">
         <div class="container">
             <div class="row">
-                <div class="col-8" ">
-                    <h1 class="hero-unit-heading ">Hello, I'm Emem Ike</h1>
-                    <h2 class="hero-unit-subheading ">A frontend developer</h2>
-                    <button type="button " id="portfolio-button " class="btn btn-primary " name="portfolio-button ">Check out my portfolio</button>
+                <div class="col-sm-10 col-md-6">
+                    <h1 class="hero-unit-heading">I'm John Doe</h1>
+                    <h2 class="hero-unit-subheading">Web Designer &amp; Developer</h2>
+                    <p>I enjoy building incredible web experiences for clients. From idea to deployment, I can handle the entire process.</p>
+                    <p>This site showcases my most recent and favourite pieces of work.</p>
+                    <button type="button" id="portfolio-button" class="btn btn-primary" name="portfolio-button">Check out my portfolio</button>
                 </div>
-            </div>
-
-            <div class="col-4 ">
-                <img src="img/hero.png " class="hero " width="300 "  alt=" " />
             </div>
         </div>
     </section>
 
-   
+    <section id="portfolio-section" class="content-section content-section-centered">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="content-section-heading">My Portfolio</h2>
+                    <p>Here’s a selection of my favourite and most recent pieces of work.</p>
+                </div>
+            </div>
+            <div class="row portfolio-cards">
+                <div class="col-sm-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-image" style="background-image: url('img/who-am-i-desktop.jpg"></div>
+                        <div class="portfolio-card-information">
+                            <span class="portfolio-card-title">Portfolio Piece 1</span>
+                            <span class="portfolio-card-credits">Design - Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-image"></div>
+                        <div class="portfolio-card-information">
+                            <span class="portfolio-card-title">Portfolio Piece 2</span>
+                            <span class="portfolio-card-credits">Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-image"></div>
+                        <div class="portfolio-card-information">
+                            <span class="portfolio-card-title">Portfolio Piece 3</span>
+                            <span class="portfolio-card-credits">Branding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section content-section-side-image content-dark">
+        <div class="content-section-side-image-container d-block d-sm-none" style="background-image: url('img/who-am-i-desktop.jpg')"></div>
+
+        <div class="content-section-side-image-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 offset-sm-1">
+                        <h2 class="content-section-heading">
+                            <img class="img-circle mb-4" width="60" height="60" src="img/profile-picture.jpg" alt="John Doe">
+                            <br> Who am I?
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis turpis non risus imperdiet feugiat et vel eros. Sed at accumsan sapien, at venenatis libero.</p>
+                        <p>Nullam dictum sodales sem, ut dictum risus congue sit amet. Vivamus malesuada tempus interdum. Nulla congue imperdiet orci, et dapibus dui mollis at. Suspendisse in congue lacus, eu volutpat lacus. Cras interdum quam felis. Mauris
+                            porttitor, augue vel interdum hendrerit, libero lorem euismod nulla, ac tempus metus sem id elit. Integer dictum fringilla risus, eu tincidunt sem lacinia eget. In quis dictum ipsum.</p>
+                        <p>Morbi at ligula sed nunc egestas ornare vitae in orci. Quisque arcu elit, faucibus ut urna a, iaculis tincidunt dolor.</p>
+                        <p>To see my full range of skills, <a href="#" data-toggle="modal" data-target="#skills-modal">click here.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section-side-image-container d-none d-sm-block" style="background-image: url('img/who-am-i-mobile.jpg')"></div>
+    </section>
+
+    <section class="content-section content-section-centered">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="content-section-heading">Get in touch</h2>
+                    <p>Say hello or ask me <em>anything</em>. I’m always happy to help.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <form class="contact-form" id="contact-form">
+                        <input class="contact-form-input" id="name-field" type="text" name="name" placeholder="Name" value="" required>
+                        <input class="contact-form-input" id="email-field" type="email" name="email" placeholder="Email Address" value="" required>
+                        <input class="contact-form-input" id="phone-number-field" type="text" name="phone_number" placeholder="Phone Number" value="">
+                        <textarea class="contact-form-input" id="query-field" name="name" placeholder="Your Query..."></textarea>
+                        <div class="contact-form-actions">
+                            <input class="contact-form-checkbox-input" type="checkbox" name="consent" id="consent" value="1" required>
+                            <label class="contact-form-checkbox-label" for="consent">
+                    I agree to receive a direct response to my enquiry via the contact details I provided above.
+                  </label>
+                            <button class="btn btn-primary btn-block" type="submit" name="contact-form-submit" id="contact-form-submit-button">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        &copy; John Doe - 2019
+    </footer>
+
+    <div class="modal fade" id="skills-modal" tabindex="-1" role="dialog" aria-labelledby="skills-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="skills-modal-label">All Skillsets</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p>Below are my current skills, updated as of <strong>April 2019</strong>.</p>
+                    <div class="skillsets">
+                        <div class="skillset">
+                            <h3 class="skillset-heading">HTML</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Expert</div>
+                            </div>
+                        </div>
+                        <div class="skillset">
+                            <h3 class="skillset-heading">CSS (SCSS)</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                            </div>
+                        </div>
+                        <div class="skillset">
+                            <h3 class="skillset-heading">PHP</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">Junior</div>
+                            </div>
+                        </div>
+                        <div class="skillset">
+                            <h3 class="skillset-heading">MySQL</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/scripts.js "></script>
 </body>
 
