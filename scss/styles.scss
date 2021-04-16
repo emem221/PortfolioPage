@@ -59,20 +59,17 @@ a {
     transition: width .2s ease-in-out;
 }
 
-.social-link {
+.social {
     color: #000;
     font-size: 1.5rem;
     text-decoration: none;
-}
-
-.social-link:hover {
-    color: #ac275f;
+    outline: none;
     background-color: transparent;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
+    &:hover,
+    &:active,
+    &:focus {
+        color: darken(#ac275f, 15%);
+    }
 }
 
 .image {
