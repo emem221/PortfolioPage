@@ -343,11 +343,14 @@ img {
     width: 50%;
   }
   .hero-unit-heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 25px;
     text-align: center;
+  }
+  .hero-unit-subheading {
+    font-size: 1.8rem;
   }
   .hero-unit-box {
     text-align: center;
