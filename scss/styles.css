@@ -5,6 +5,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
 h1,
 h2,
 h3,
@@ -49,6 +53,22 @@ a:hover, a:active, a:focus {
   margin-bottom: 15px;
   -webkit-transition: width .2s ease-in-out;
   transition: width .2s ease-in-out;
+}
+
+.social-link {
+  color: #000;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #ac275f;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .image {
