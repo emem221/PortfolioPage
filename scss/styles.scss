@@ -59,11 +59,15 @@ a {
     transition: width .2s ease-in-out;
 }
 
+.social-links {
+    padding-bottom: 10px;
+}
+
 .social {
     color: #000;
     font-size: 1.5rem;
-    text-decoration: none;
-    outline: none;
+    margin: 8px;
+    text-decoration: transparent;
     background-color: transparent;
     &:hover,
     &:active,
