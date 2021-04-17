@@ -57,6 +57,7 @@ a:hover, a:active, a:focus {
 
 .social-links {
   padding-bottom: 10px;
+  padding-top: 15px;
 }
 
 .social {
@@ -66,6 +67,7 @@ a:hover, a:active, a:focus {
   -webkit-text-decoration: transparent;
           text-decoration: transparent;
   background-color: transparent;
+  font-weight: 600;
 }
 
 .social:hover, .social:active, .social:focus {
@@ -141,8 +143,10 @@ img {
 
 .portfolio-cards .portfolio-card .portfolio-card-information .portfolio-card-title {
   display: block;
-  font-size: 20px;
-  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
   letter-spacing: -1px;
 }
 
@@ -164,6 +168,10 @@ img {
   text-decoration: none;
 }
 
+.more {
+  margin-top: 30px;
+}
+
 /* content section*/
 .content-section {
   margin-top: 30px;
@@ -171,7 +179,7 @@ img {
 
 .content-section .content-section-heading {
   margin-bottom: 25px;
-  color: #000;
+  color: #fff;
 }
 
 .content-section .content-section-text {
@@ -199,6 +207,15 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.content-section-head {
+  color: #000;
+}
+
+.content-section-head2 {
+  margin-top: 13px;
+  font-size: 1.2rem;
 }
 
 .content-dark {
@@ -382,7 +399,7 @@ img {
         align-content: space-between;
   }
   .hero-unit-subheading {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .hero-unit-box {
     text-align: center;
