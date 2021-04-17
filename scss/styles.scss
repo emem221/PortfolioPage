@@ -147,11 +147,19 @@ img {
                 font-size: 14px;
                 text-transform: uppercase;
                 letter-spacing: 1px;
-                color: #A7A7A7;
                 font-weight: 600;
+            }
+            .portfolio-card-credits a {
+                color: #fff;
+                text-decoration: none;
             }
         }
     }
+}
+
+.portfolio-card-credits a {
+    color: #fff;
+    text-decoration: none;
 }
 
 
@@ -161,7 +169,7 @@ img {
     margin-top: 30px;
     .content-section-heading {
         margin-bottom: 25px;
-        color: #fff;
+        color: #000;
     }
     .content-section-text {
         color: #fff;

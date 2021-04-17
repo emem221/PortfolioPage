@@ -151,8 +151,17 @@ img {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #A7A7A7;
   font-weight: 600;
+}
+
+.portfolio-cards .portfolio-card .portfolio-card-information .portfolio-card-credits a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.portfolio-card-credits a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* content section*/
@@ -162,7 +171,7 @@ img {
 
 .content-section .content-section-heading {
   margin-bottom: 25px;
-  color: #fff;
+  color: #000;
 }
 
 .content-section .content-section-text {
