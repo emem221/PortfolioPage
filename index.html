@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link id="dark-theme-style" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="scss/styles.css">
     <title>Emem Ike</title>
@@ -27,6 +28,8 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
+            <a href="javascript:void()" class="btn btn-outline-info btn-lg ml-auto font-weight-bold" id="theme-toggler" onclick="toggleTheme()"></a>
+
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <span class="icons">
                 <a  href="https://www.linkedin.com/in/emem-i-b7b78b12a/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
@@ -81,7 +84,7 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" id="portfolio-section" class="content-section content-section-centered">
+    <section data-aos="fade-up aos-init aos-animate" id="portfolio-section" class="content-section content-section-centered">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -91,7 +94,7 @@
             </div>
             <div class="row portfolio-cards">
                 <div class="col-sm-4">
-                    <div class="portfolio-card">
+                    <div class="portfolio-card aos-init aos-animate">
                         <div class="portfolio-card-image" style="background-image: url('img/login\ page.png')"></div>
                         <div class="portfolio-card-information">
                             <span class="portfolio-card-title">Login Page</span>
@@ -101,8 +104,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="portfolio-card">
+                <div class="col-sm-4 ">
+                    <div class="portfolio-card aos-init aos-animate">
                         <div class="portfolio-card-image" style="background-image: url('img/calculator.png')"></div>
                         <div class="portfolio-card-information">
                             <span class="portfolio-card-title">calculator</span>
@@ -112,8 +115,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="portfolio-card">
+                <div class="col-sm-4 aos-init aos-animate">
+                    <div class="portfolio-card aos-init aos-animate">
                         <div class="portfolio-card-image" style="background-image: url('img/scroller.png')"></div>
                         <div class="portfolio-card-information">
                             <span class="portfolio-card-title">scroller</span>
@@ -124,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-card-credits more">
+            <div class="portfolio-card-credits more aos-init aos-animate">
                 <button type="button" id="portfolio-button" class="btn btn-primary " name="portfolio-button"><a href="portfolio.html">View more</a></button>
             </div>
         </div>
@@ -133,13 +136,13 @@
 
     <footer class="footer" id="contact" data-aos="fade" aos-init aos-animate ">
         <h1 class="display-4 ">Get in Touch</h1>
-        <div class="card text-center ">
+        <div class="card text-center aos-init aos-animate ">
             <div class="card-body " >
               <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="# " class="btn ">Say Hello 👋</a>
+              <a href="mailto:ememikeh@gmail.com " class="btn ">Say Hello 👋</a>
             </div>
 
-            <div class="card text-center ">
+            <div class="card text-center aos-init aos-animate ">
                 <ul class="list-inline ">
                     <li class="list-inline-item "><a href="https://drive.google.com/file/d/1SwzCkwP6Fp5weRVq6WQRwZssOAv66sZp/view?usp=sharing "> Resume </a></li>
                     <li class="list-inline-item "><a class="list-inline-link " href="https://github.com/emem221 ">GitHub </a></li>
@@ -200,10 +203,12 @@
         </div>
     </div>
 
-
-    <script type="text/javascript " src="https://code.jquery.com/jquery-3.4.0.min.js "></script>
-    <script type="text/javascript " src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script type="text/javascript " src="https://code.jquery.com/jquery-3.4.0.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN "crossorigin="anonymous "
+    ></script>
+    <script type="text/javascript " src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
+    
     <script src="js/scripts.js "></script>
 </body>
 
