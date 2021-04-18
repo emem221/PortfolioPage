@@ -39,6 +39,11 @@ a:hover, a:active, a:focus {
 }
 
 /* hero */
+#portfolio-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .hero-unit-box {
   margin-top: 100px;
 }

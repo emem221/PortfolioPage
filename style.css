@@ -34,7 +34,8 @@ nav .mainMenu li a {
 }
 
 nav .mainMenu li a:hover {
-    background: rgb(255, 94, 0);
+    background: none;
+        color: #ac275f;
 }
 
 nav .openMenu {
@@ -51,7 +52,7 @@ nav .mainMenu .closeMenu,
     cursor: pointer;
 }
 
-.fa-facebook:hover {
+.fa-linkedin:hover {
     color: rgb(0, 110, 255);
 }
 
@@ -88,6 +89,7 @@ nav .logo {
         justify-content: center;
         align-items: center;
         background: #000;
+        opacity: 0.9;
         transition: top 1s ease;
         display: none;
     }
@@ -102,8 +104,9 @@ nav .logo {
     }
     nav .mainMenu li a:hover {
         background: none;
-        color: rgb(255, 123, 0);
+        color: #ac275f;
         font-size: 1.6rem;
+        font-weight:600;
     }
     .icons i {
         display: inline-block;
