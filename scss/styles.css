@@ -233,89 +233,62 @@ img {
 }
 
 /* contact form*/
-.contact-form {
-  margin-top: 30px;
-}
-
-.contact-form .contact-form-input {
-  display: block;
-  width: 100%;
-  border: 0;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.15);
-  padding: 18px;
-  margin-bottom: 20px;
-}
-
-.contact-form .contact-form-input::-webkit-input-placeholder {
-  color: #9E9E9E;
-}
-
-.contact-form .contact-form-input:-ms-input-placeholder {
-  color: #9E9E9E;
-}
-
-.contact-form .contact-form-input::-ms-input-placeholder {
-  color: #9E9E9E;
-}
-
-.contact-form .contact-form-input::placeholder {
-  color: #9E9E9E;
-}
-
-.contact-form .contact-form-checkbox-input {
-  display: none;
-}
-
-.contact-form .contact-form-checkbox-input:checked + .contact-form-checkbox-label:after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.contact-form .contact-form-checkbox-label {
-  position: relative;
-  padding-left: 50px;
-  color: #ADABAB;
-  text-align: left;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.contact-form .contact-form-checkbox-label:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: -1px;
-  width: 35px;
-  height: 35px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-.contact-form .contact-form-checkbox-label:after {
-  position: absolute;
-  left: 11px;
-  top: 9px;
-  font-size: 14px;
-  color: #ac275f;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: "\f00c";
-  opacity: 0;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-  -webkit-transition: opacity .3s, -webkit-transform .3s;
-  transition: opacity .3s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s;
-  transition: opacity .3s, transform .3s, -webkit-transform .3s;
-}
-
+/*.contact-form {
+    margin-top: 30px;
+    .contact-form-input {
+        display: block;
+        width: 100%;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.15);
+        padding: 18px;
+        margin-bottom: 20px;
+        &::placeholder {
+            color: #9E9E9E;
+        }
+    }
+    .contact-form-checkbox-input {
+        display: none;
+        &:checked+.contact-form-checkbox-label:after {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    .contact-form-checkbox-label {
+        position: relative;
+        padding-left: 50px;
+        color: #ADABAB;
+        text-align: left;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: -1px;
+            width: 35px;
+            height: 35px;
+            border-radius: 4px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        &:after {
+            position: absolute;
+            left: 11px;
+            top: 9px;
+            font-size: 14px;
+            color: #ac275f;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: "\f00c";
+            opacity: 0;
+            transform: scale(0.5);
+            transition: opacity .3s, transform .3s;
+        }
+    }
+}*/
 /* footer */
 .footer {
   background-color: #fff;
@@ -331,12 +304,40 @@ img {
 .card {
   background-color: #000;
   color: #fff;
+  text-transform: none;
 }
 
 .card-body .btn {
   background-color: #ac275f;
   font-style: italic;
   text-transform: none;
+  color: #fff;
+}
+
+.card-body {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.card-body .card-text {
+  font-size: 1.2rem;
+}
+
+.list-inline {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.list-inline .list-inline-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-footer span {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 4px;
 }
 
 /* progress bars */
@@ -414,6 +415,10 @@ img {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .card-body {
+    width: 100%;
+    margin: 5px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

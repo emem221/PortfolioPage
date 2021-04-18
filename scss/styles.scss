@@ -222,7 +222,8 @@ img {
 
 /* contact form*/
 
-.contact-form {
+
+/*.contact-form {
     margin-top: 30px;
     .contact-form-input {
         display: block;
@@ -277,7 +278,7 @@ img {
             transition: opacity .3s, transform .3s;
         }
     }
-}
+}*/
 
 
 /* footer */
@@ -296,12 +297,38 @@ img {
 .card {
     background-color: #000;
     color: #fff;
+    text-transform: none;
 }
 
 .card-body .btn {
     background-color: #ac275f;
     font-style: italic;
     text-transform: none;
+    color: #fff;
+}
+
+.card-body {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    .card-text {
+        font-size: 1.2rem;
+    }
+}
+
+.list-inline {
+    margin: 10px;
+    font-size: 1.2rem;
+    .list-inline-item a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.card-footer span {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 4px;
 }
 
 
@@ -383,5 +410,9 @@ img {
         margin: 5px;
         width: 100%;
         justify-content: space-evenly;
+    }
+    .card-body {
+        width: 100%;
+        margin: 5px;
     }
 }
