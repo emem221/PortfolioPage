@@ -9,15 +9,6 @@ body {
   pointer-events: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #0B3757;
-}
-
 h1 {
   font-size: 50px;
   font-weight: 500;
@@ -325,17 +316,27 @@ img {
   transition: opacity .3s, transform .3s, -webkit-transform .3s;
 }
 
-/* helper */
 /* footer */
 .footer {
-  background: #EEF1F2;
-  color: rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
   font-weight: bold;
   font-size: 14px;
   padding: 10px 0;
+}
+
+.card {
+  background-color: #000;
+  color: #fff;
+}
+
+.card-body .btn {
+  background-color: #ac275f;
+  font-style: italic;
+  text-transform: none;
 }
 
 /* progress bars */
