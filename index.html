@@ -67,11 +67,11 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" class="content-section content-section-side-image content-dark">
+    <section data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-sine" class="content-section content-section-side-image content-dark">
 
         <div class="content-section-side-image-content" id="about">
             <div class="container">
-                <div class="row">
+                <div data-aos="fade-up aos-init aos-animate" class="row">
                     <div class="col-sm-9 offset-sm-1">
                         <h2 class="content-section-heading">
 
@@ -99,10 +99,11 @@
             </div>
             <div class="row portfolio-cards">
                 <div class="col-sm-4">
-                    <div class="portfolio-card aos-init aos-animate">
+                    <div class="portfolio-card aos-init aos-animate" data-aos="fade-up aos-init aos-animate" data-aos-duration="500" data-aos-easing="ease-in-sine">
                         <div class="portfolio-card-image" style="background-image: url('img/login\ page.png')"></div>
                         <div class="portfolio-card-information">
                             <span class="portfolio-card-title">Login Page</span>
+                            <p><em>A responsive login page for a product or service.</em></p>
                             <span class="portfolio-card-credits">
                                 <button type="button" 
                                  class="btn btn-outline-info " id="portfolio-btn" name="portfolio-button"><a href="https://emem221.github.io/login-page/">View website</a></button>
@@ -111,21 +112,23 @@
                     </div>
                 </div>
                 <div class="col-sm-4 ">
-                    <div class="portfolio-card aos-init aos-animate">
+                    <div class="portfolio-card aos-init aos-animate" data-aos="fade-up aos-init aos-animate" data-aos-duration="500" data-aos-easing="ease-in-sine">
                         <div class="portfolio-card-image" style="background-image: url('img/calculator.png')"></div>
                         <div class="portfolio-card-information">
-                            <span class="portfolio-card-title">calculator</span>
+                            <span class="portfolio-card-title">Calculator App</span>
+                            <p><em>This app performs arithmetic operations on numbers</em></p>
                             <span class="portfolio-card-credits">
                                 <button type="button"  id="portfolio-btn" class="btn btn-outline-info " name="portfolio-button"><a href="https://emem221.github.io/calculator/">View website</a></button>
                             </span>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 aos-init aos-animate">
-                    <div class="portfolio-card aos-init aos-animate">
+                <div class="col-sm-4 aos-init aos-animate " data-aos="fade-up aos-init aos-animate" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                    <div class="portfolio-card ">
                         <div class="portfolio-card-image" style="background-image: url('img/scroller.png')"></div>
                         <div class="portfolio-card-information">
-                            <span class="portfolio-card-title">scroller</span>
+                            <span class="portfolio-card-title">Scroller Page</span>
+                            <p><em>A web page that changes background images as you scroll through.</em></p>
                             <span class="portfolio-card-credits">
                                 <button type="button" id="portfolio-btn" class="btn btn-outline-info " name="portfolio-button"><a href="https://emem221.github.io/scroller/">View website</a></button>
                             </span>
@@ -133,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-card-credits more aos-init aos-animate">
+            <div class="portfolio-card-credits more ">
                 <button type="button" id="portfolio-button" class="btn btn-primary " name="portfolio-button"><a href="portfolio.html">View more</a></button>
             </div>
         </div>
@@ -160,56 +163,50 @@
           </div>
     </footer>
 
-    <!-- Modal -->
     <div class="modal fade " id="skills-modal " tabindex="-1 " role="dialog " aria-labelledby="skills-modal-label " aria-hidden="true ">
         <div class="modal-dialog modal-dialog-centered " role="document ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <h5 class="modal-title " id="skills-modal-label ">All Skillsets</h5>
-                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+          <div class="modal-content ">
+            <div class="modal-header ">
+              <h5 class="modal-title " id="skills-modal-label ">All Skillsets</h5>
+              <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
                 <span aria-hidden="true ">&times;</span>
               </button>
-                </div>
-                <div class="modal-body ">
-                    <p>Below are my current skills, updated as of <strong>April 2021</strong>.</p>
-                    <div class="skillsets ">
-                        <div class="skillset ">
-                            <h3 class="skillset-heading ">HTML</h3>
-                            <div class="progress ">
-                                <div class="progress-bar bg-primary " role="progressbar " style="width: 85% " aria-valuenow="85 " aria-valuemin="0 " aria-valuemax="100 "></div>
-                            </div>
-                        </div>
-                        <div class="skillset ">
-                            <h3 class="skillset-heading ">CSS (SCSS)</h3>
-                            <div class="progress ">
-                                <div class="progress-bar bg-primary " role="progressbar " style="width: 70% " aria-valuenow="70 " aria-valuemin="0 " aria-valuemax="100 "></div>
-                            </div>
-                        </div>
-                        <div class="skillset ">
-                            <h3 class="skillset-heading ">JavaScript</h3>
-                            <div class="progress ">
-                                <div class="progress-bar bg-primary " role="progressbar " style="width: 50% " aria-valuenow="35 " aria-valuemin="0 " aria-valuemax="100 "></div>
-                            </div>
-                        </div>
-                        <div class="skillset ">
-                            <h3 class="skillset-heading ">React</h3>
-                            <div class="progress ">
-                                <div class="progress-bar bg-primary " role="progressbar " style="width: 40% " aria-valuenow="20 " aria-valuemin="0 " aria-valuemax="100 "></div>
-                            </div>
-                        </div>
-                        <div class="skillset ">
-                            <h3 class="skillset-heading ">Node.js</h3>
-                            <div class="progress ">
-                                <div class="progress-bar bg-primary " role="progressbar " style="width: 20% " aria-valuenow="20 " aria-valuemin="0 " aria-valuemax="100 "></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div class="modal-body ">
+              <p>Below are my current skills, updated as of <strong>April 2019</strong>.</p>
+              <div class="skillsets ">
+                <div class="skillset ">
+                  <h3 class="skillset-heading ">HTML</h3>
+                  <div class="progress ">
+                    <div class="progress-bar bg-primary " role="progressbar " style="width: 85% " aria-valuenow="85 " aria-valuemin="0 " aria-valuemax="100 ">Expert</div>
+                  </div>
+                </div>
+                <div class="skillset ">
+                  <h3 class="skillset-heading ">CSS (SCSS)</h3>
+                  <div class="progress ">
+                    <div class="progress-bar bg-primary " role="progressbar " style="width: 70% " aria-valuenow="70 " aria-valuemin="0 " aria-valuemax="100 ">Intermediate</div>
+                  </div>
+                </div>
+                <div class="skillset ">
+                  <h3 class="skillset-heading ">PHP</h3>
+                  <div class="progress ">
+                    <div class="progress-bar bg-primary " role="progressbar " style="width: 35% " aria-valuenow="35 " aria-valuemin="0 " aria-valuemax="100 ">Junior</div>
+                  </div>
+                </div>
+                <div class="skillset ">
+                  <h3 class="skillset-heading ">MySQL</h3>
+                  <div class="progress ">
+                    <div class="progress-bar bg-primary " role="progressbar " style="width: 20% " aria-valuenow="20 " aria-valuemin="0 " aria-valuemax="100 ">Beginner</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+  
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
     <script type="text/javascript " src="https://code.jquery.com/jquery-3.4.0.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN "crossorigin="anonymous "
     ></script>
