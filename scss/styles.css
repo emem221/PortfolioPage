@@ -476,5 +476,8 @@ input:checked + .slider:before {
   .theme-switch-wrapper {
     text-align: center;
   }
+  .card-footer span {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
