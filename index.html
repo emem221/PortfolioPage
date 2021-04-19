@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <link id="dark-theme-style" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="scss/styles.css">
     <title>Emem Ike</title>
@@ -28,7 +27,14 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
-            <a href="javascript:void()" class="btn btn-outline-info btn-lg ml-auto font-weight-bold" id="theme-toggler" onclick="toggleTheme()"></a>
+
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+
 
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <span class="icons">
@@ -138,7 +144,7 @@
         <h1 class="display-4 ">Get in Touch</h1>
         <div class="card text-center aos-init aos-animate ">
             <div class="card-body " >
-              <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text ">Want to work together or have any questions?</p>
               <a href="mailto:ememikeh@gmail.com " class="btn ">Say Hello 👋</a>
             </div>
 

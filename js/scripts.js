@@ -1,46 +1,32 @@
+//for aos
 AOS.init();
 
-// you can use app's unique identifier here
-const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+//theme toggler
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
 
-const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-
-// you can change this url as needed
-const DARK_THEME_PATH = "https://bootswatch.com/4/cyborg/bootstrap.min.css";
-
-const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
-const THEME_TOGGLER = document.getElementById("theme-toggler");
-
-let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
-
-// check if user has already selected dark theme earlier
-if (isDark) {
-  enableDarkTheme();
-} else {
-  disableDarkTheme();
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
 }
 
-function toggleTheme() {
-    isDark = !isDark;
-    if (isDark) {
-      enableDarkTheme();
-    } else {
-      disableDarkTheme();
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
     }
-    const META = { isDark };
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
-  }
-  
-  function enableDarkTheme() {
-    DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
-    THEME_TOGGLER.innerHTML = "🌙";
-  }
-  
-  function disableDarkTheme() {
-    DARK_STYLE_LINK.setAttribute("href", "");
-    THEME_TOGGLER.innerHTML = "🌞";
-  }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
 
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+  //mobile nav menu toggle
 const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
