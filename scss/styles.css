@@ -221,6 +221,7 @@ img {
 
 .content-section .content-section-text {
   color: #fff;
+  font-size: 1.2rem;
 }
 
 .content-section.content-section-centered {
@@ -387,24 +388,6 @@ input:checked + .slider:before {
 }
 
 /* progress bars */
-.progress .progress-bar.bg-primary {
-  background: linear-gradient(105.63deg, #EA2626 -21.04%, #0029FF 147.44%);
-}
-
-/* skillsets */
-.skillsets .skillset {
-  margin-top: 20px;
-}
-
-.skillsets .skillset .skillset-heading {
-  color: #797979;
-  letter-spacing: 1.5px;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-
 /* Popup box */
 /* media queries */
 @media only screen and (max-width: 576px) {
@@ -466,6 +449,9 @@ input:checked + .slider:before {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .content-section .content-section-text {
+    font-size: 1rem;
   }
   .card-body {
     width: 100%;
