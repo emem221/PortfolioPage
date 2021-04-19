@@ -47,21 +47,16 @@ h2 {
     color: var(--font-color);
 }
 
-a {
-    color: #9ACFF6;
-    &:hover,
-    &:active,
-    &:focus {
-        color: darken(#9ACFF6, 15%);
-    }
-}
-
 
 /* hero */
 
 #portfolio-button a {
     color: #fff;
     text-decoration: none;
+}
+
+.row-unit {
+    margin-top: 100px;
 }
 
 .hero-unit-box {
@@ -140,12 +135,32 @@ img {
     }
 }
 
+#portfolio-btn a {
+    color: var(--font-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    padding: 15px 8px;
+    transition: text-shadow .3s;
+    border: 0;
+}
+
 .btn-outline-info {
-    border: 2px solid red;
-    border-radius: 25px;
-    .btn-outline-info a {
-        color: var(--font-color);
+    border: 2px solid var(--font-color) !important;
+    border-radius: 10px;
+    margin: 10px;
+    &.btn-outline-info {
+        background: transparent;
+        &:active,
+        &:focus {
+            box-shadow: none !important;
+        }
     }
+}
+
+.portfolio-card-credits .btn-outline-info:hover {
+    background-color: #f04b90;
 }
 
 
@@ -181,17 +196,8 @@ img {
                 letter-spacing: 1px;
                 font-weight: 600;
             }
-            .portfolio-card-credits a {
-                color: #000;
-                text-decoration: none;
-            }
         }
     }
-}
-
-.portfolio-card-credits a {
-    color: #000;
-    text-decoration: none;
 }
 
 .more {
@@ -408,9 +414,10 @@ input:checked+.slider:before {
 }
 
 @media only screen and (max-width: 850px) {
-    .row2 {
+    .row-unit {
         flex-direction: column-reverse;
         width: 100%;
+        margin-top: 40px;
     }
     .image {
         margin-top: 0;
