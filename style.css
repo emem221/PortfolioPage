@@ -13,8 +13,8 @@ body {
 /* navbar */
 
 nav {
-    background: #000;
-    color: #fff;
+    background: transparent;
+    color: var(--font-color);
     display: flex;
     justify-content: space-between;
 }
@@ -27,10 +27,12 @@ nav .mainMenu {
 nav .mainMenu li a {
     display: inline-block;
     padding: 15px;
+    margin: 20px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--font-color);
     font-size: 1.5rem;
+    font-weight:600;
 }
 
 nav .mainMenu li a:hover {
@@ -103,6 +105,9 @@ nav .logo {
     }
     nav .openMenu {
         display: block;
+    }
+    nav .mainMenu li a {
+        color: #fff;
     }
     nav .mainMenu li a:hover {
         background: none;
