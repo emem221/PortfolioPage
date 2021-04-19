@@ -368,8 +368,30 @@ input:checked+.slider:before {
 
 /* progress bars */
 
+.progress {
+    .progress-bar {
+        &.bg-primary {
+            background: linear-gradient(105.63deg, #EA2626 -21.04%, #0029FF 147.44%);
+        }
+    }
+}
 
-/* popup */
+
+/* skillsets */
+
+.skillsets {
+    .skillset {
+        margin-top: 20px;
+        .skillset-heading {
+            color: #797979;
+            letter-spacing: 1.5px;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+    }
+}
 
 
 /* media queries */

@@ -42,4 +42,4 @@ function close(){
     mainMenu.style.top = '-100%';
 }
 
-//popup box
+
