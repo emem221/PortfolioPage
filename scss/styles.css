@@ -405,6 +405,7 @@ input:checked + .slider:before {
   margin-bottom: 5px;
 }
 
+/* Popup box */
 /* media queries */
 @media only screen and (max-width: 576px) {
   .content-section.content-section-side-image {
