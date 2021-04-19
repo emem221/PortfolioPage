@@ -477,7 +477,7 @@ input:checked + .slider:before {
     text-align: center;
   }
   .card-footer span {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
