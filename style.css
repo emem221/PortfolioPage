@@ -83,7 +83,7 @@ nav .logo {
 
 @media(max-width: 800px) {
     nav .mainMenu {
-        height: 100vh;
+        height: 90vh;
         position: fixed;
         top: 0;
         right: 0;
@@ -103,6 +103,7 @@ nav .logo {
         top: 20px;
         right: 20px;
     }
+   
     nav .openMenu {
         display: block;
     }
