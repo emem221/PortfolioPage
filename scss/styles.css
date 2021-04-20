@@ -578,58 +578,8 @@ input:checked + .slider:before {
   .image {
     margin-top: 0;
     padding-top: 0;
-    height: 100px;
-  }
-  .social {
-    color: var(--font-color);
-  }
-  .bio {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    width: 50%;
-  }
-  .hero-unit-heading {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    text-align: center;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-  }
-  .hero-unit-subheading {
-    font-size: 1.4rem;
-  }
-  .hero-unit-box {
-    text-align: center;
-    margin: 5px;
-    width: 100%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .content-section .content-section-text {
-    font-size: 1rem;
-  }
-  .card-body {
-    width: 100%;
-    margin: 5px;
-  }
-  .card-body .card-text {
-    font-size: 1.2rem;
-  }
-  .theme-switch-wrapper {
-    text-align: center;
-  }
-  .text-muted {
-    font-size: 0.6rem;
-  }
-  .card-footer span {
-    font-size: 0.8rem;
-  }
-  .skill-bars {
-    width: 100%;
+    height: auto !important;
+    width: 100% !important;
   }
 }
 
@@ -645,6 +595,8 @@ input:checked + .slider:before {
   .image {
     margin-top: 0;
     padding-top: 0;
+    height: auto !important;
+    width: 100% !important;
   }
   .social {
     color: var(--font-color);
