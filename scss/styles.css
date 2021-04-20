@@ -99,7 +99,7 @@ h2 {
   border-color: #EA2626;
   border: 5px dashed #ac275f;
   border-radius: 10%;
-  padding: 3px;
+  padding: 10px;
   max-width: 100%;
   margin-top: 8px;
   height: auto;
@@ -581,6 +581,12 @@ input:checked + .slider:before {
     height: auto !important;
     width: 100% !important;
   }
+  .bio {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -606,6 +612,7 @@ input:checked + .slider:before {
     margin-right: auto;
     margin-top: 30px;
     width: 50%;
+    height: auto;
   }
   .hero-unit-heading {
     font-size: 2.5rem;
