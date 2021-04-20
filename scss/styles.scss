@@ -528,6 +528,18 @@ input:checked+.slider:before {
         margin-top: 0;
         padding-top: 0;
     }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .row-unit {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .image {
+        margin-top: 0;
+        padding-top: 0;
+    }
     .social {
         color: var(--font-color);
     }
@@ -575,23 +587,6 @@ input:checked+.slider:before {
     }
     .skill-bars {
         width: 100%;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .content-section {
-        &.content-section-side-image {
-            flex-direction: column;
-            .content-section-heading {
-                text-align: center;
-            }
-            .content-section-side-image-container {
-                min-height: 80px;
-                width: 100%;
-                background-size: cover;
-                background-position: center;
-            }
-        }
     }
 }
 
