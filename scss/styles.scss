@@ -518,6 +518,66 @@ input:checked+.slider:before {
 
 /* media queries */
 
+@media only screen and (max-width: 375px) {
+    .row-unit {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .image {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .social {
+        color: var(--font-color);
+    }
+    .bio {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 50%;
+    }
+    .hero-unit-heading {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+        align-content: space-between;
+    }
+    .hero-unit-subheading {
+        font-size: 1.4rem;
+    }
+    .hero-unit-box {
+        text-align: center;
+        margin: 5px;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .content-section .content-section-text {
+        font-size: 1rem;
+    }
+    .card-body {
+        width: 100%;
+        margin: 5px;
+    }
+    .card-body .card-text {
+        font-size: 1.2rem;
+    }
+    .theme-switch-wrapper {
+        text-align: center;
+    }
+    .text-muted {
+        font-size: 0.6rem;
+    }
+    .card-footer span {
+        font-size: 0.8rem;
+    }
+    .skill-bars {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     .content-section {
         &.content-section-side-image {
